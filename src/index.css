@@ -1,0 +1,36 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+
+}
+
+html {
+  font-size: 16px;
+  height: 100vh;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}

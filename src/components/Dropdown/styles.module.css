@@ -1,0 +1,76 @@
+.customSelect {
+  position: relative;
+  width: 200px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  max-height: 30px;
+}
+
+.customSelectToggle {
+  cursor: pointer;
+  padding: 5px;
+  box-sizing: border-box;
+  max-height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7em;
+  background-color: white;
+  color: black;
+  height: 30px;
+}
+
+.customSelectToggle.open {
+  border-radius: 4px 4px 0 0;
+}
+
+.arrowIcon {
+  margin-left: 10px;
+  transition: transform 0.2s ease;
+}
+
+.customSelectToggle.open .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.customSelectOptions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  background-color: white;
+  color: black;
+  overflow: auto;
+  height: 90px;
+  z-index: 100;
+}
+
+.customSelectToggle.open .customSelectOptions {
+  display: block;
+}
+
+.customSelectOption {
+  padding: 5px;
+  cursor: pointer;
+  text-align: left;
+  height: 12px;
+  font-size: 0.6em;
+  font-weight: bolder;
+}
+
+.customSelectOption.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.customSelectOption:hover {
+  background-color: #ccc;
+}
