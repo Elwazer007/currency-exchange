@@ -1,8 +1,6 @@
 export const listQuotes = async () => {
   const url = "https://currency-exchange.p.rapidapi.com/listquotes";
-  const apiKey = import.meta.env.VITE_REACT_APP_RAPIDAPI_KEY;
-
-  if (apiKey === undefined) throw new Error("API key not found");
+  const apiKey = "633081883cmsh54a8310eef98a04p116fa5jsn4be68b40c810";
 
   const headers = {
     "X-RapidAPI-Key": apiKey,
@@ -26,9 +24,7 @@ export const listQuotes = async () => {
 
 export const exchange = async (from: string, to: string): Promise<string> => {
   const apiUrl = "https://currency-exchange.p.rapidapi.com/exchange";
-  const apiKey = import.meta.env.VITE_REACT_APP_RAPIDAPI_KEY;
-
-  if (apiKey === undefined) throw new Error("API key not found");
+  const apiKey = "633081883cmsh54a8310eef98a04p116fa5jsn4be68b40c810";
 
   const queryParams = new URLSearchParams({
     from: from,

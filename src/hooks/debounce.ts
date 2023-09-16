@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef } from "react";
 import debounce from "lodash/debounce";
 
 export const useDebounce = (callback: () => void) => {
-  const ref = useRef<any>();
+  const ref = useRef<() => void>();
 
   useEffect(() => {
     ref.current = callback;
